@@ -25,7 +25,7 @@ export const DocsCryptoIntroduction = `
     pages = {1012}
 }`
 
-export const ProductDesignAbtesting = `
+export const DocsProductDesignAbtesting = `
 @misc{abtesting,
     title={A/B Testing: A Systematic Literature Review}, 
     author={Federico Quin and Danny Weyns and Matthias Galster and Camila Costa Silva},
