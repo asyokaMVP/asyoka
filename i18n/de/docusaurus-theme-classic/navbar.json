@@ -1,0 +1,14 @@
+{
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Crypto": {
+    "message": "Crypto",
+    "description": "Navbar item with label Crypto"
+  },
+  "item.label.Quantum": {
+    "message": "Quantum",
+    "description": "Navbar item with label Quantum"
+  }
+}

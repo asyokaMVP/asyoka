@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Crypto": {
+    "message": "Crypto",
+    "description": "The label for category Crypto in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Neuropsychology": {
+    "message": "Neuropsychology",
+    "description": "The label for category Neuropsychology in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Quantum": {
+    "message": "Quantum",
+    "description": "The label for category Quantum in sidebar tutorialSidebar"
+  }
+}

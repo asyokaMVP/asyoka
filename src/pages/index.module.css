@@ -1,0 +1,539 @@
+.navbar__brand {
+  margin-left: 0;
+}
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, var(--ifm-color-primary) 100%);
+  color: var(--ifm-font-color-base-inverse);
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Product Manager Portfolio Styles - More Compact */
+.pmPortfolio {
+  padding: 3rem 0;
+  background: var(--ifm-background-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.pmPortfolioHeader {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.pmPortfolioTitle {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.pmPortfolioSubtitle {
+  font-size: 1.1rem;
+  color: var(--ifm-color-emphasis-700);
+  max-width: 800px;
+  margin: 1.5rem auto 0;
+  line-height: 1.6;
+}
+
+/* Skills Section - Compact Grid */
+.pmSkillsSection {
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.pmSkillsTitle, .pmSectionTitle {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--ifm-heading-color);
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pmSkillsTitle::before, .pmSectionTitle::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--ifm-color-primary-lightest);
+  border-radius: 50%;
+  top: -20px;
+  left: -20px;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.pmSkillsTitle::after, .pmSectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--ifm-color-primary-light), var(--ifm-color-primary));
+  border-radius: 2px;
+}
+
+.pmSkillsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pmSkillCard {
+  padding: 1.8rem;
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(var(--ifm-color-primary-rgb), 0.1);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.pmSkillCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.pmSkillCard:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: rgba(var(--ifm-color-primary-rgb), 0.2);
+}
+
+.pmSkillCard:hover::before {
+  transform: scaleX(1);
+}
+
+.pmSkillHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.pmSkillIcon {
+  font-size: 2.2rem;
+  margin-right: 1rem;
+  color: var(--ifm-color-primary);
+  background: rgba(var(--ifm-color-primary-rgb), 0.1);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  --rotation-angle: 0deg;
+}
+
+.pmSkillName {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem 0;
+  color: var(--ifm-heading-color);
+}
+
+.pmSkillLevel {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 30px;
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darkest);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.pmSkillDescription {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.pmSkillDetails {
+  padding-left: 1.2rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.pmSkillDetails li {
+  margin-bottom: 0.4rem;
+  color: var(--ifm-color-emphasis-800);
+  position: relative;
+}
+
+.pmSkillDetails li::before {
+  content: "•";
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Education Section */
+.pmEducationSection {
+  margin-bottom: 7rem;
+  position: relative;
+  z-index: 1;
+}
+
+.pmEducationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2.5rem;
+}
+
+.pmEducationCard {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  padding: 2.5rem;
+  border-radius: 16px;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(var(--ifm-color-primary-rgb), 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.pmEducationCard::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at bottom right, rgba(var(--ifm-color-primary-rgb), 0.1), transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.pmEducationCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: rgba(var(--ifm-color-primary-rgb), 0.2);
+}
+
+.pmEducationCard:hover::after {
+  opacity: 1;
+}
+
+.pmEducationDegree {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.pmEducationDegree::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--ifm-color-primary);
+  border-radius: 2px;
+}
+
+.pmEducationMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.pmEducationInstitution {
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.pmEducationYear {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.9rem;
+}
+
+.pmEducationDescription {
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+}
+
+.pmEducationInstitutionContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pmEducationLogo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Certifications Section */
+.pmCertificationsSection {
+  margin-bottom: 5rem;
+}
+
+.pmCertificationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.pmCertificationCard {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+  border-radius: var(--pm-card-border-radius);
+  box-shadow: var(--pm-card-shadow);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: transform 0.2s ease;
+}
+
+.pmCertificationCard:hover {
+  transform: translateY(-3px);
+  border-color: var(--ifm-color-primary-lighter);
+}
+
+.pmCertificationName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-heading-color);
+}
+
+.pmCertificationMeta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pmCertificationIssuer {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.pmCertificationYear {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.9rem;
+}
+
+.pmCertificationIssuerContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pmCertificationLogo {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+/* Projects Section */
+.pmProjectsSection {
+  margin-bottom: 5rem;
+}
+
+.pmProjectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.pmProjectCard {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  border-radius: var(--pm-card-border-radius);
+  box-shadow: var(--pm-card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.pmProjectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--ifm-color-primary-lighter);
+}
+
+.pmProjectImage {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.pmProjectContent {
+  padding: 1.5rem;
+}
+
+.pmProjectTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: var(--ifm-heading-color);
+}
+
+.pmProjectDescription {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.pmProjectMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pmProjectTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pmProjectTag {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  background: var(--ifm-color-primary-light);
+  color: var(--ifm-color-emphasis-800);
+}
+
+/* Contact Section - Compact */
+.pmContactSection {
+  text-align: center;
+  padding: 3rem 2rem;
+  max-width: 800px;
+  border-radius: 16px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pmContactTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.pmContactText {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.pmContactButtons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.pmContactButtons a {
+  padding: 0.7rem 2rem;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+/* Responsive adjustments - More compact */
+@media screen and (max-width: 1200px) {
+  .pmSkillsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .pmCertificationsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .pmProjectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .pmEducationGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pmCertificationsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pmSkillsGrid, 
+  .pmProjectsGrid, 
+  .pmCertificationsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pmSkillCard,
+  .pmEducationCard,
+  .pmCertificationCard,
+  .pmProjectCard {
+    padding: 1.5rem;
+  }
+  
+  .pmPortfolioTitle {
+    font-size: 1.8rem;
+  }
+  
+  .pmPortfolioSubtitle {
+    font-size: 0.95rem;
+  }
+}
