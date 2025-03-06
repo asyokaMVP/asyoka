@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkasyoka=self.webpackChunkasyoka||[]).push([[1903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/asyokamvp/asyoka/blog","blogTitle":"Blog","authorsListPath":"/asyokamvp/asyoka/blog/authors"}')}}]);
