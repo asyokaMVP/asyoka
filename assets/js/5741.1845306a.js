@@ -1,0 +1,1 @@
+(self.webpackChunkasyoka=self.webpackChunkasyoka||[]).push([[5741],{5741:()=>{}}]);
