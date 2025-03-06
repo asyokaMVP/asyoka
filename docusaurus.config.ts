@@ -1,23 +1,23 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 const config: Config = {
-  title: 'Blog',
-  favicon: 'img/logo_mini.svg',
+  title: "Blog",
+  favicon: "img/logo_mini.svg",
 
-  url: 'https://github.com/',
-  baseUrl: '/asyokamvp/asyoka/',
+  url: "https://github.com/",
+  baseUrl: "/asyoka/",
 
-  organizationName: 'asyokamvp',
-  projectName: 'asyoka',
-  deploymentBranch: 'gh-pages',
+  organizationName: "asyokamvp",
+  projectName: "asyoka",
+  deploymentBranch: "gh-pages",
   trailingSlash: false,
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
 
   // i18n: {
   //   defaultLocale: 'en',
@@ -34,17 +34,16 @@ const config: Config = {
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/asyokamvp/asyoka/tree/main',
+          sidebarPath: "./sidebars.ts",
+          editUrl: "https://github.com/asyokamvp/asyoka/tree/main",
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -54,7 +53,7 @@ const config: Config = {
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-      ({
+      {
         // ... Your options.
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
@@ -64,39 +63,39 @@ const config: Config = {
 
         // If you're using `noIndex: true`, set `forceIgnoreNoIndex` to enable local index:
         // forceIgnoreNoIndex: true,
-      }),
+      },
     ],
   ],
 
   themeConfig: {
-    image: 'img/logo.svg',
+    image: "img/logo.svg",
     navbar: {
       logo: {
-        src: 'img/logo.svg',
-        className: 'header-logo',
-        href: '/',
+        src: "img/logo.svg",
+        className: "header-logo",
+        href: "/",
       },
       items: [
         {
-          type: 'dropdown',
-          label: 'Blog',
-          position: 'left',
+          type: "dropdown",
+          label: "Blog",
+          position: "left",
           items: [
             {
-              label: 'Product Planning',
-              to: '/docs/ProductPlanning/introduction',
+              label: "Product Planning",
+              to: "/docs/ProductPlanning/introduction",
             },
             {
-              label: 'Product Design',
-              to: '/docs/ProductDesign/introduction',
+              label: "Product Design",
+              to: "/docs/ProductDesign/introduction",
             },
             {
-              label: 'Product Metrics',
-              to: '/docs/ProductMetrics/introduction',
+              label: "Product Metrics",
+              to: "/docs/ProductMetrics/introduction",
             },
             {
-              label: 'Development & Launch',
-              to: '/docs/Development&Launch/introduction',
+              label: "Development & Launch",
+              to: "/docs/Development&Launch/introduction",
             },
           ],
         },
@@ -113,23 +112,23 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
           items: [
             {
-              label: 'Github',
-              href: 'https://github.com/asyokamvp',
-              className: 'footer__link-github',
+              label: "Github",
+              href: "https://github.com/asyokamvp",
+              className: "footer__link-github",
             },
           ],
         },
         {
           items: [
             {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/company/technische-hochschule-augsburg/',
-              className: 'footer__link-linkedin',
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/company/technische-hochschule-augsburg/",
+              className: "footer__link-linkedin",
             },
           ],
         },
