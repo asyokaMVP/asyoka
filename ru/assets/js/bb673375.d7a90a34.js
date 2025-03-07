@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkasyoka=self.webpackChunkasyoka||[]).push([[4184],{8053:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/asyoka/ru/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
