@@ -18,7 +18,7 @@ export const CitationProvider = ({ children }) => {
     useEffect(() => {
         const pathParts = location.pathname.split('/').filter(Boolean);
         
-        const startIndex = pathParts[0] === 'docs' ? 1 : 2;
+        const startIndex = pathParts[0] === 'docs' ? 0 : 1;
         
         const path = pathParts
             .slice(startIndex)
@@ -29,14 +29,19 @@ export const CitationProvider = ({ children }) => {
             })
             .join('');
 
-        console.log("Looking for BibTeX for path:", path);
+        let normalizedPath = path;
+        if (path.startsWith('De') || path.startsWith('Ru')) {
+            normalizedPath = path.substring(2);
+        }
+
+        console.log("Looking for BibTeX for path:", normalizedPath);
         
-        const bibContent = R[path];
+        const bibContent = R[normalizedPath];
         if (bibContent) {
             const refs = parseBibTeX(bibContent);
             setReferences(refs);
         } else {
-            console.warn(`No BibTeX found for path: ${path}`);
+            console.warn(`No BibTeX found for path: ${normalizedPath}`);
         }
     }, [location]);
 

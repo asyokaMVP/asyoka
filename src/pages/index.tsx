@@ -17,7 +17,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/introduction">
-            Learn More
+            Dive Deeper
           </Link>
         </div>
       </div>
@@ -32,21 +32,33 @@ function ProductManagerPortfolio() {
       name: 'Product Design',
       description: 'User-centered design approach with focus on solving real user problems through design thinking methodology',
       icon: 'img/design.svg',
-      level: 'Advanced',
+      level: 'Beginner',
       details: [
         'Design Thinking & User-Centered Design (UCD)',
         // 'User Personas & Jobs To Be Done (JTBD)',
         'Wireframing & Prototyping in Figma',
-        // 'Usability Testing & User Research',
+        'Usability Testing & User Research',
         'Collaborative design workshops with Miro'
       ]
     },
     {
       id: 2,
+      name: 'Generative AI',
+      description: 'Leveraging AI capabilities to enhance product development, ideation, and market reach through effective prompt engineering and AI integration',
+      icon: 'img/ai.svg',
+      level: 'Beginner',
+      details: [
+        'AI Product Management Lifecycle',
+        'GenAI and LLMs',
+        'Prompt Engineering',
+      ]
+    },
+    {
+      id: 3,
       name: 'Product Planning',
       description: 'Strategic and tactical roadmapping with effective prioritization frameworks to deliver maximum value',
       icon: 'img/plan.svg',
-      level: 'Advanced',
+      level: 'Beginner',
       details: [
         'MVP Definition & Lean Product Development',
         'Product Roadmapping (tactical & strategic)',
@@ -56,31 +68,31 @@ function ProductManagerPortfolio() {
       ]
     },
     {
-      id: 3,
-      name: 'Product Metrics',
-      description: 'Data-driven decision making through comprehensive metrics analysis and user behavior tracking',
-      icon: 'img/metrics.svg',
-      level: 'Intermediate',
-      details: [
-        'A/B Testing & Experimentation',
-        'AARRR (Pirate Metrics) Framework',
-        // 'North Star Metric Definition',
-        // 'Cohort Analysis & Retention Tracking',
-        // 'LTV/CAC Optimization',
-      ]
-    },
-    {
       id: 4,
       name: 'Development & Launch',
       description: 'Agile product development with effective go-to-market strategies and feature release management',
       icon: 'img/launch.svg',
-      level: 'Advanced',
+      level: 'Beginner',
       details: [
         'Agile/Scrum Methodology',
         'Go-To-Market (GTM) Strategy',
         'Feature Specification & User Stories',
         // 'Feature Flagging & Phased Rollouts',
         // 'Beta Testing Programs',
+      ]
+    },
+    {
+      id: 5,
+      name: 'Product Metrics',
+      description: 'Data-driven decision making through comprehensive metrics analysis and user behavior tracking',
+      icon: 'img/metrics.svg',
+      level: 'Beginner',
+      details: [
+        'A/B Testing & Experimentation',
+        'AARRR (Pirate Metrics) Framework',
+        // 'North Star Metric Definition',
+        // 'Cohort Analysis & Retention Tracking',
+        // 'LTV/CAC Optimization',
       ]
     },
   ];
@@ -94,7 +106,7 @@ function ProductManagerPortfolio() {
       logo: 'img/school.svg'
     },
     {
-      degree: 'B.Sc. in Medical Information Sciences',
+      degree: 'Partial completion of B.Sc. in Medical Information Sciences',
       institution: 'University of Augsburg',
       year: '2023-2025',
       description: 'Combines a sound understanding of the fundamentals of computer science with subject-specific competencies in medicine, biology, and healthcare',
@@ -104,29 +116,41 @@ function ProductManagerPortfolio() {
 
   const certifications = [
     {
-      name: 'Certified Scrum Product Owner (CSPO)',
+      name: 'Agile Project Management',
       issuer: 'Google',
       logo: 'img/google.svg',
-      year: '2022'
+      year: '2025'
     },
     {
-      name: 'Product Analytics Certification',
+      name: 'Foundations of User Experience (UX) Design',
       issuer: 'Google',
       logo: 'img/google.svg',
-      year: '2023'
+      year: '2025'
     },
     {
-      name: 'Design Thinking Practitioner',
+      name: 'Google AI Essentials',
       issuer: 'Google',
       logo: 'img/google.svg',
-      year: '2022'
+      year: '2025'
     },
     {
-      name: 'Advanced Product Management',
-      issuer: 'Google',
-      logo: 'img/google.svg',
-      year: '2023'
+      name: 'Generative AI: Introduction and Applications',
+      issuer: 'IBM',
+      logo: 'img/ibm.svg',
+      year: '2025'
     },
+    // {
+    //   name: 'Design Thinking Practitioner',
+    //   issuer: 'Google',
+    //   logo: 'img/google.svg',
+    //   year: '2022'
+    // },
+    // {
+    //   name: 'Advanced Product Management',
+    //   issuer: 'Google',
+    //   logo: 'img/google.svg',
+    //   year: '2023'
+    // },
   ];
 
   const projects = [
@@ -157,9 +181,9 @@ function ProductManagerPortfolio() {
     <section className={styles.pmPortfolio}>
       <div className="container">
         <div className={styles.pmPortfolioHeader}>
-          <h2 className={styles.pmPortfolioTitle}>Product Manager</h2>
+          <h2 className={styles.pmPortfolioTitle}>Product Manager ~ AI Journey</h2>
           <p className={styles.pmPortfolioSubtitle}>
-            Experienced Product Manager with expertise in user-centered design, strategic roadmapping, and data-driven decision making. Passionate about creating digital products that solve real user problems while driving business growth.
+          Exploring the intersection of AI and product management. This blog is my personal lab for insights, skills, and future projects..
           </p>
         </div>
 
@@ -241,7 +265,7 @@ function ProductManagerPortfolio() {
         </div>
 
         {/* Certifications Section */}
-        {/* <div className={styles.pmCertificationsSection}>
+        <div className={styles.pmCertificationsSection}>
           <h2 className={styles.pmSectionTitle}>Certifications</h2>
           <div className={styles.pmCertificationsGrid}>
             {certifications.map((cert, index) => (
@@ -261,7 +285,7 @@ function ProductManagerPortfolio() {
               </div>
             ))}
           </div>
-        </div> */}
+        </div>
 
         {/* Call to Action */}
         <div className={styles.pmContactSection}>
@@ -270,10 +294,10 @@ function ProductManagerPortfolio() {
             I'm passionate about creating user-centered products that drive business growth. Let's connect to discuss how I can help your team deliver exceptional product experiences.
           </p>
           <div className={styles.pmContactButtons}>
-            <a href="mailto:your.email@example.com" className="button button--primary button--lg">
+            <a href="mailto:alinakubenova@icloud.com" className="button button--primary button--lg">
               Contact Me
             </a>
-            <a href="/resume.pdf" className="button button--secondary button--lg" target="_blank">
+            <a href="/test.pdf" className="button button--secondary button--lg" target="_blank">
               Download Resume
             </a>
           </div>

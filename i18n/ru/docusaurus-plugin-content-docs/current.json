@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Product Planning": {
+    "message": "Product Planning",
+    "description": "The label for category Product Planning in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Product Design": {
+    "message": "Product Design",
+    "description": "The label for category Product Design in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Product Metrics": {
+    "message": "Product Metrics",
+    "description": "The label for category Product Metrics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Development & Launch": {
+    "message": "Development & Launch",
+    "description": "The label for category Development & Launch in sidebar tutorialSidebar"
+  }
+}

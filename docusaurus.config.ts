@@ -5,7 +5,7 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
 const config: Config = {
-  title: "Blog",
+  title: "Mind Notes",
   favicon: "img/logo_mini.svg",
 
   url: "https://github.com/",
@@ -19,18 +19,21 @@ const config: Config = {
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
-  // i18n: {
-  //   defaultLocale: 'en',
-  //   locales: ['en', 'de'],
-  //   localeConfigs: {
-  //     en: {
-  //       htmlLang: 'en-GB'
-  //     },
-  //     de: {
-  //       htmlLang: 'de-DE'
-  //     },
-  //   },
-  // },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'de', 'ru'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB'
+      },
+      de: {
+        htmlLang: 'de-DE'
+      },
+      ru: {
+        htmlLang: 'ru-RU'
+      },
+    },
+  },
 
   presets: [
     [
@@ -77,32 +80,14 @@ const config: Config = {
       },
       items: [
         {
-          type: "dropdown",
-          label: "Blog",
+          href: "/docs/introduction",
+          label: "Mind Notes",
           position: "left",
-          items: [
-            {
-              label: "Product Planning",
-              to: "/docs/ProductPlanning/introduction",
-            },
-            {
-              label: "Product Design",
-              to: "/docs/ProductDesign/introduction",
-            },
-            {
-              label: "Product Metrics",
-              to: "/docs/ProductMetrics/introduction",
-            },
-            {
-              label: "Development & Launch",
-              to: "/docs/Development&Launch/introduction",
-            },
-          ],
         },
-        // {
-        //   type: 'localeDropdown',
-        //   position: 'right',
-        // },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         {
           href: "https://github.com/asyokamvp",
           position: "right",
@@ -127,7 +112,7 @@ const config: Config = {
           items: [
             {
               label: "LinkedIn",
-              href: "https://www.linkedin.com/company/technische-hochschule-augsburg/",
+              href: "https://www.linkedin.com/in/alina-kubenov/",
               className: "footer__link-linkedin",
             },
           ],

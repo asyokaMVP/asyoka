@@ -1,0 +1,14 @@
+{
+  "link.item.label.Github": {
+    "message": "Github",
+    "description": "The label of footer link with label=Github linking to https://github.com/asyokamvp"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/company/technische-hochschule-augsburg/"
+  },
+  "copyright": {
+    "message": "© 2025 Alina Kubenov | Powered by <a href=\"https://docusaurus.io/\" target=\"_blank\">Docusaurus</a>",
+    "description": "The footer copyright"
+  }
+}

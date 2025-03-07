@@ -1,0 +1,22 @@
+{
+  "item.label.Mind Notes": {
+    "message": "Mind Notes",
+    "description": "Navbar item with label Mind Notes"
+  },
+  "item.label.Product Planning": {
+    "message": "Product Planning",
+    "description": "Navbar item with label Product Planning"
+  },
+  "item.label.Product Design": {
+    "message": "Product Design",
+    "description": "Navbar item with label Product Design"
+  },
+  "item.label.Product Metrics": {
+    "message": "Product Metrics",
+    "description": "Navbar item with label Product Metrics"
+  },
+  "item.label.Development & Launch": {
+    "message": "Development & Launch",
+    "description": "Navbar item with label Development & Launch"
+  }
+}

@@ -453,6 +453,16 @@ math[display="inline"] {
   filter: brightness(0) saturate(100%) invert(53%) sepia(20%) saturate(1651%) hue-rotate(198deg) brightness(106%) contrast(94%);
 }
 
+.section-title.generative-ai > div > a::before {
+  background-image: url("../../static/img/ai.svg");
+  background-size: 30px;
+  padding-left: 5px;
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  filter: brightness(0) saturate(100%) invert(53%) sepia(20%) saturate(1651%) hue-rotate(198deg) brightness(106%) contrast(94%);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

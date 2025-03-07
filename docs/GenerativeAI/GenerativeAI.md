@@ -1,6 +1,5 @@
 ---
 id: "introduction"
-title: "Introduction"
+title: "Generative AI"
 sidebar_position: 1
 ---
-
